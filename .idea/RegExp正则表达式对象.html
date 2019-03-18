@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+
+    <script>
+
+        /**
+         * 正则表达式
+         * 1单个字符：[]
+         * \d  0-9
+         * \w  a-zA-Z0-9
+         * 2量词符号
+         * ？：出现0次或1次
+         * *： 出现0次或多次
+         * +： 出现1次货多次
+         * \w*  表示由单词构成 出现0次或多次
+         *
+         * {m,n}:表示 m<=数量<=n
+         * \w{6-12}  表示出现a-zA-Z0-9 最多6-12个
+         * 方法
+         * test(); 验证指定的字符串是否符合正则的规范
+         *
+         *
+         */
+        var reg = new RegExp("\\w{6,12}");
+        var reg2 = /^\w{6,12}$/   /^\w{6,12}$/
+        // alert(reg);
+        // alert(reg2);
+
+        var string = "zhangsan1!~";
+        alert(reg.test(string));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
